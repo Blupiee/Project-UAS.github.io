@@ -14,5 +14,5 @@ a:hover {text-decoration:underline;color: #D49137;}
 </style>
 </head>
 <body>
-<h1>cHECK OUT</h1>
+<h1>CHECK OUT</h1>
 </body>
