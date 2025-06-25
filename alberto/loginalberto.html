@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="styles.css.css">
+</head>
+<body>
+
+<div class="login-container">
+ <h2>Login</h2>
+
+<form id="loginForm" onsubmit="return validateLogin()">
+ <input type="text" id="username" placeholder="Tambahkan Username" required>
+
+ <input type="password" id="password" placeholder="Masukkan Password" required>
+
+ <button type="submit">Login</button>
+
+ <div id="message" class="login-message"></div>
+ </form>
+ </div>
+
+ <script>
+ function validateLogin() {
+ const usernameInput = document.getElementById('username').value;
+ const passwordInput = document.getElementById('password').value;
+const messageDiv = document.getElementById('message');
+
+
+ const correctUsername = "yue";
+const correctPassword = "cr7";
+
+ if (usernameInput === correctUsername & passwordInput === correctPassword) {
+ messageDiv.textContent = "Login Berhasil! Selamat datang.";
+ messageDiv.style.color = "blue"; 
+
+ window.location.href = 'headeralberto.html';
+ 
+ return false; 
+ } else {
+ messageDiv.textContent = "Username atau password salah. Silakan coba lagi.";
+ messageDiv.style.color = "red";
+ return false; 
+ }
+ }
+ </script>
+
+</body>
+</html>

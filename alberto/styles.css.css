@@ -1,0 +1,286 @@
+// alberto
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    padding:0;
+    background-image: url('keren.jpeg');
+    no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    
+.login-container {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+    
+    .login-container h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: black;
+    text-shadow: none;
+    }
+    
+    .login-container input{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #0080ft;
+    border-radius: 5px;
+    }
+    
+    .login-container button{
+    background-color: #087bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .login-container button:hover { 
+    background-color: #0856b3;
+    }
+    @media (max-width: 480px){ 
+    login-container {
+    width: 80%;
+    }
+    }
+
+
+            /*style footer*/
+
+        .features {
+            background-color: #719a89;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        .features div {
+            flex: 1 1 200px;
+            margin: 10px;
+            padding: 5px; 
+        }
+
+        .features strong {
+            display: block; 
+            margin-bottom: 3px; 
+        }
+
+        .features span.description { 
+            font-size: 0.9em; 
+            opacity: 0.9; 
+        }
+
+        .footer {
+            background-color: #f4f4f4;
+            padding: 30px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer h3 {
+            margin-top: 0;
+            margin-bottom: 10px; 
+        }
+
+        .footer-section a {
+            color: #000;
+            text-decoration: none;
+             margin-left: 20px; 
+            display: block; 
+            margin: 5px 0; 
+        }
+
+        .footer-section a:hover {
+            color: #007bff;
+        }
+
+        .footer-section p { 
+            margin: 5px 0; 
+            line-height: 1.4; 
+        }
+
+
+        .copyright {
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            background: #eee;
+        }
+
+        @media (max-width: 600px) {
+            .features, .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-section {
+                text-align: center; 
+            }
+            .footer-section a {
+                display: inline-block; 
+                margin: 5px 10px; 
+            }
+        }
+
+        
+    //shop
+.best-seller {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.best-seller h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Overlay */
+.hoverable .hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* this now covers full card */
+  background-color: rgba(40, 40, 40, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.product-card * {
+  position: relative;
+  z-index: 1;
+}
+
+.hoverable .hover-overlay {
+  cursor: pointer;
+}
+
+.hoverable:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-overlay button {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.product-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.product-info h4 {
+  margin: 0 0 0.25rem 0;
+}
+
+.product-info p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.product-info strong {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.show-more {
+  margin-top: 2rem;
+}
+
+.show-more button {
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  border: 1px solid #00b894;
+  color: #00b894;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.show-more button:hover {
+  background-color: #00b894;
+  color: white;
+}
+
+.product-card {
+  text-decoration: none;
+  color: inherit;
+}
+.product-card h4,
+.product-card p,
+.product-card strong {
+  text-decoration: none;
+}
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Edlyn's Crafts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .features {
+            background-color: #719a89;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        .features div {
+            flex: 1 1 200px;
+            margin: 10px;
+            padding: 5px; 
+        }
+
+        .features strong {
+            display: block; 
+            margin-bottom: 3px; 
+        }
+
+        .features span.description { 
+            font-size: 0.9em; 
+            opacity: 0.9; 
+        }
+
+        .footer {
+            background-color: #f4f4f4;
+            padding: 30px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer h3 {
+            margin-top: 0;
+            margin-bottom: 10px; 
+        }
+
+        .footer-section a {
+            color: #000;
+            text-decoration: none;
+             margin-left: 20px; 
+            display: block; 
+            margin: 5px 0; 
+        }
+
+        .footer-section a:hover {
+            color: #007bff;
+        }
+
+        .footer-section p { 
+            margin: 5px 0; 
+            line-height: 1.4; 
+        }
+
+
+        .copyright {
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            background: #eee;
+        }
+
+        @media (max-width: 600px) {
+            .features, .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-section {
+                text-align: center; 
+            }
+            .footer-section a {
+                display: inline-block; 
+                margin: 5px 10px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="features">
+        <div>
+            <strong>🏆 High Quality</strong><br>
+            <span class="description">Crafted from top materials</span>
+        </div>
+        <div>
+            <strong>✅ Warranty Protection</strong><br>
+            <span class="description">Over 2 week</span>
+        </div>
+        <div>
+            <strong>📦 Free Shipping</strong><br>
+            <span class="description">Order over 50k</span>
+        </div>
+        <div>
+            <strong>🎧 24 / 7 Support</strong><br>
+            <span class="description">Dedicated support</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-section">
+            <h3>Edlyn’s Crafts</h3>
+            <p>Serdam smth smth</p>
+            <p>ini alamat</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links</h3>
+            <a href="headeralberto.html">Home</a>
+            <a href="footer.html">Shop</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <a href="https://www.instagram.com/edlyns.crafts?igsh=NXRrYTk2MG1pc3Vm" target="_blank">Instagram</a>
+            <a href="mailto:edlyns.crafts@gmail.com" target="_blank">Email</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © 2025 Edlyn’s Crafts
+    </div>
+
+</body>
+</html>
